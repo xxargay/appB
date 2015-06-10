@@ -14,7 +14,7 @@ function load() {
         //alert("Funciona!");
 
 
-
+/**********************************************************************************
     // crear l'array d'audios
     playAudio = document.getElementsByClassName("audio");
 
@@ -23,7 +23,7 @@ function load() {
         alert(playAudio[i].id + " " + playAudio[i].className + " " + playAudio.length);
     }
 
-/**********************************************************************************
+
 
 
 
