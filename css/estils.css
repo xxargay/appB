@@ -1,0 +1,45 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    margin:0px;    padding:0px;
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12pt;                             /*  12pt = 16px = 1 em  */
+    height:100%; width:80%; margin:50px auto; text-align: center; background-color: #333344;
+}
+
+h1 {margin-bottom: 50px; color: #80A9BF; border-bottom: 3px solid #FFAA00 ;padding:20px;}
+
+a {
+    display:inline-block; 
+    text-decoration:none; 
+    font-weight: bold;
+    border-radius: 16px; 
+    padding:18px; 
+    margin:10px 0;
+    width: 50%;
+    color: #D8ECF5;
+    background-color: #7098AE;
+}
+
+.ready {display:none;}
+
+#estat, #estat2 {
+    display:inline-block; 
+    text-decoration:none; 
+    font-weight: bold;
+    
+    padding:10px; 
+    margin:20px 0;
+    width: 50%;
+    color: #A3C3D1;
+    background-color: #444455;
+}
+
+#sortir{background-color: #20506A;color: #7098AE;}
