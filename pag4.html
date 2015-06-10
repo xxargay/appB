@@ -22,9 +22,30 @@
 <!--/////////////////////////////////////////////////-->
             <iframe width="100%" height="260" src="http://www.youtube.com/embed/mBoVoj5jLfc" frameborder="0" allowfullscreen></iframe>
 
-            <iframe width="100%" height="260" src="https://player.vimeo.com/video/12236680" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe width="100%" height="260" src="http://www.youtube.com/embed/mBoVoj5jLfc" frameborder="0" autoplay controls="0"></iframe>
 
-            <iframe width="100%" height="260" src="http://www.w3schools.com/html/mov_bbb.mp4" frameborder="0" controls></iframe>
+            <iframe width="100%" height="260" src="http://www.youtube.com/embed/mBoVoj5jLfc" frameborder="0" enablejsapi></iframe>
+
+            <div id="ytplayer"></div>
+            <script>
+              // Load the IFrame Player API code asynchronously.
+              var tag = document.createElement('script');
+              tag.src = "https://www.youtube.com/player_api";
+              var firstScriptTag = document.getElementsByTagName('script')[0];
+              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+              // Replace the 'ytplayer' element with an <iframe> and
+              // YouTube player after the API code downloads.
+              var player;
+              function onYouTubePlayerAPIReady() {
+                player = new YT.Player('ytplayer', {
+                  height: '270',
+                  width: '400',
+                  videoId: 'mBoVoj5jLfc'
+                });
+              }
+            </script>
+            
 <!--/////////////////////////////////////////////////////-->
 
             <p><a href="index.html">TORNAR index.html</a></p>
